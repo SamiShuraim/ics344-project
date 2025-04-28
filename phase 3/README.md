@@ -50,3 +50,11 @@ To validate the effectiveness of the implemented defense, the original attack, e
 
 ## Phase 3 Conclusion
 In this phase, the critical SQL injection vulnerability in [`phase 3/payroll_app.php`](payroll_app.php) was addressed by refactoring the application code to use prepared statements. Validation through rerunning the `sqlmap` attack via [`phase 2/script.py`](../phase%202/script.py) confirmed the effectiveness of this defense mechanism. The before-and-after comparison clearly demonstrates that parameterized queries successfully mitigated the vulnerability, preventing unauthorized database access and data leakage. This highlights the importance of secure coding practices, specifically input validation and the use of prepared statements, in defending against SQL injection attacks.
+
+## Distribution of Work
+
+| Name                   | ID        | % of work |
+|------------------------|-----------|-----------|
+| Bader Al Shalawi       | 202032320 | 30%      |
+| Abdulmohsen Alshawarib | 202028860 | 30%      |
+| Sami Shuraim           | 202042200 | 40%      |

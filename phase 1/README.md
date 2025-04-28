@@ -65,3 +65,11 @@ Link to Python Script: [script.py](script.py)
 
 ## Phase 1 Conclusion
 In this phase, we successfully exploited a vulnerable **MySQL service via HTTP** on the Metasploitable3 machine. By using SQL injection, we were able to bypass authentication, dump sensitive data (user names, salaries, etc.), and automate the process using sqlmap. This lays the foundation for further analysis and defensive strategies in the next phase of the project.
+
+## Distribution of Work
+
+| Name                   | ID        | % of work |
+|------------------------|-----------|-----------|
+| Bader Al Shalawi       | 202032320 | 35%      |
+| Abdulmohsen Alshawarib | 202028860 | 25%      |
+| Sami Shuraim           | 202042200 | 40%      |

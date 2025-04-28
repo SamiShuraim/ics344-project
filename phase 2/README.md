@@ -38,3 +38,11 @@ These correlated events demonstrate the ability of the SIEM to reconstruct the a
 
 ## Phase 2 Conclusion
 In this phase, logs from the attacker and victim machines were successfully integrated into Splunk using `rsyslog`. By analyzing these logs, we reconstructed the timeline of the sqlmap attack performed in Phase 1, identifying the start, execution (including specific credential attempts), and end phases through correlated log entries. This demonstrates the value of SIEM in correlating events from different sources to understand and investigate security incidents.
+
+## Distribution of Work
+
+| Name                   | ID        | % of work |
+|------------------------|-----------|-----------|
+| Bader Al Shalawi       | 202032320 | 20%      |
+| Abdulmohsen Alshawarib | 202028860 | 35%      |
+| Sami Shuraim           | 202042200 | 45%      |
