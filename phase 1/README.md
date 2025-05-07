@@ -35,10 +35,11 @@ nmap -sV 192.168.1.11
 
 ![Nmap scan results showing open ports and services](nmap-scan.png)
 
-### 4. Using Hydra to Find Valid Usernames and Passwords
-Next, we run Hydra to attempt cracking valid usernames and passwords for the web service exposing the MySQL database. This brute-force attack uses a list of potential passwords to find valid combinations needed for tools like sqlmap.
+### 4. Exploring the HTTP Server and Identifying the Target Application
+After scanning the services, we accessed the HTTP server running on the vulnerable machine. This revealed several websites and directories, as shown below. We then navigated to `payroll_app.php` and discovered a login page. This login page became the target for our SQL injection attempts in the subsequent step.
 
-![Valid usernames and passwords discovered by Hydra](valid-passwords.png)
+![Index of / on the HTTP server](http-server.png)
+![Payroll Login page](payroll-app-login.png)
 
 ### 5. SQL Injection via Web Interface
 At this point, we perform an SQL injection attack targeting the MySQL database **via** the vulnerable web interface. By using sqlmap with the appropriate parameters (like the URL and potentially credentials found by Hydra), we can exploit the SQL vulnerability to gain access to the MySQL database. This allows us to view all user data, including first names, last names, and salaries.
